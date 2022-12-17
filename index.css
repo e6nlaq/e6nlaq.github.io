@@ -6,6 +6,10 @@ h1 {
 	color: white;
 }
 
+p {
+	color: white;
+}
+
 h1.downline {
 	/*線の種類（実線） 太さ 色*/
 	border-bottom: solid 3px white;
