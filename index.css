@@ -12,6 +12,5 @@ p {
 }
 
 h1.downline {
-	/*線の種類（実線） 太さ 色*/
 	border-bottom: solid 3px white;
 }
