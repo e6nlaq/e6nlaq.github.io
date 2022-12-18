@@ -97,3 +97,7 @@ header {
 html {
 	scroll-behavior: smooth;
 }
+
+h1.count {
+	font-size: 43px;
+}
