@@ -9,21 +9,14 @@ body {
 	color: white;
 }
 
-/* h1 {
-	color: white;
-}
-
-p {
-	color: white;
-} */
-
-h1.downline {
+.downline {
 	border-bottom: solid 3px white;
 }
 
+/* 
 h3.downline {
 	border-bottom: solid 3px white;
-}
+} */
 
 .round {
 	border-radius: 6px;
