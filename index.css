@@ -36,6 +36,7 @@ h3.downline {
 	font-weight: 700;
 	cursor: pointer;
 	font-family: "shfont";
+	border: none;
 }
 
 header {
