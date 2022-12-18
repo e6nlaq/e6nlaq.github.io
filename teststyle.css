@@ -1,0 +1,60 @@
+@font-face {
+	font-family: "shfont";
+	src: url("./font/shfont.woff") format("woff");
+}
+
+body {
+	background-color: #0D1117;
+	font-family: "shfont", "源ノ角ゴシック", "游ゴシック", system-ui;
+	color: white;
+}
+
+.downline {
+	border-bottom: solid 3px white;
+}
+
+/* 
+h3.downline {
+	border-bottom: solid 3px white;
+} */
+
+.round {
+	border-radius: 6px;
+	background-color: #0078D4;
+	color: white;
+	min-height: 42px;
+	height: auto;
+	box-shadow: none;
+	text-align: center;
+	font-weight: 700;
+	cursor: pointer;
+	font-family: "shfont";
+	border: none;
+}
+
+header {
+	display: flex;
+	width: 99%;
+	height: 100px;
+	background-color: rgba(112, 128, 144, 0.4);
+	align-items: center;
+	border-radius: 6px;
+	position: fixed;
+	backdrop-filter: blur(6px);
+}
+
+
+.title {
+	margin-right: auto;
+	color: white;
+}
+
+.menu-item {
+	list-style: none;
+	display: inline-block;
+	padding: 10px;
+}
+
+.msitem {
+	color: white;
+}
