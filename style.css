@@ -34,12 +34,15 @@ h3.downline {
 
 header {
 	display: flex;
-	width: 100%;
+	width: 99%;
 	height: 100px;
-	background-color: slategray;
+	background-color: rgba(112, 128, 144, 0.4);
 	align-items: center;
 	border-radius: 6px;
+	position: fixed;
+	backdrop-filter: blur(6px);
 }
+
 
 .title {
 	margin-right: auto;
