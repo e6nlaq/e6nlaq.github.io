@@ -1,6 +1,11 @@
+@font-face {
+	font-family: "shfont";
+	src: url("./font/shfont.woff") format("woff");
+}
+
 body {
 	background-color: #0D1117;
-	font-family: "SourceHanSansJP", "游ゴシック", system-ui;
+	font-family: "shfont", "源ノ角ゴシック", "游ゴシック", system-ui;
 	color: white;
 }
 
