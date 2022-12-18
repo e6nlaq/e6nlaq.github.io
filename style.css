@@ -101,3 +101,7 @@ html {
 h1.count {
 	font-size: 43px;
 }
+
+.mentone {
+	cursor: pointer;
+}
