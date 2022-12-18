@@ -1,0 +1,203 @@
+// 更新履歴
+//
+// 5.0.0
+// 更新履歴をすべて削除
+// 更新履歴を日本語化
+// 新カテゴリ「高速化」を追加 (提供:https://zenn.dev/antyuntyun)
+// 関数 printを追加
+// すべての関数をinline化
+// ほとんどの引数を定数化
+// ctoll関数及びaverl関数が5.1.0で廃止予定になりました
+// 型エイリアスllがlong longから__int128_tに変更になりました
+// ullも上記のとおりです
+// ファイルの先頭が変わりました
+//
+// 5.0.1
+// ullのバグにより元に戻しました。
+//
+// 5.0.2
+// タイトルのインシデントを減らしました。
+// 構造体Weekを追加しました。
+//
+// 5.0.3
+// 定数PIをacos(-1)に変更しました。
+//
+// 5.0.4
+// llをlonglongに変更しました。
+//
+// 5.0.5
+// 互換性関数lcm及びgcdを追加
+//
+// 5.0.6
+// 5.0.5で追加された関数をすべて削除
+//
+// 5.0.7
+// repマクロを一部変更
+//
+// 5.0.8
+// 型エイリアスmii,mllを追加
+//
+// 5.0.9
+// 関数vcinを追加
+//
+// 5.0.10
+// 関数minisumを変更
+//
+// 5.1.0
+// double関係の型を追加
+// srev関数を追加
+// マクロdebugを関数に変更
+// 不要になった関数を削除
+//
+// 5.1.1
+// グローバル変数を追加
+
+#pragma region AtCoder Template<a href="./wow5.html">!1!!!!!!!</a>
+
+// #include <atcoder /scc>
+	// #ifdef _LOCAL__
+	// #include "./include/bits/stdc++.h"
+	// #else
+	#include <bits /stdc++.h>
+		// #endif
+		using namespace std;
+		// using namespace atcoder;
+
+		// 高速化
+		#pragma GCC target("avx")
+		#pragma GCC optimize("O3")
+		#pragma GCC optimize("unroll-loops")
+		#define fastio \
+		cin.tie(nullptr); \
+		cout.tie(nullptr); \
+		ios::sync_with_stdio(false); \
+		cout << fixed << setprecision(15); \ srand((unsigned)time(NULL)); // 更新履歴 // // 5.0.0 // 更新履歴をすべて削除 // 更新履歴を日本語化
+			// 新カテゴリ「高速化」を追加 (提供:https://zenn.dev/antyuntyun) // 関数 printを追加 // すべての関数をinline化 // ほとんどの引数を定数化 //
+			ctoll関数及びaverl関数が5.1.0で廃止予定になりました // 型エイリアスllがlong longから__int128_tに変更になりました // ullも上記のとおりです //
+			ファイルの先頭が変わりました // // 5.0.1 // ullのバグにより元に戻しました。 // // 5.0.2 // タイトルのインシデントを減らしました。 // 構造体Weekを追加しました。 // //
+			5.0.3 // 定数PIをacos(-1)に変更しました。 // // 5.0.4 // llをlonglongに変更しました。 // // 5.0.5 // 互換性関数lcm及びgcdを追加 // //
+			5.0.6 // 5.0.5で追加された関数をすべて削除 // // 5.0.7 // repマクロを一部変更 // // 5.0.8 // 型エイリアスmii,mllを追加 // // 5.0.9 //
+			関数vcinを追加 // // 5.0.10 // 関数minisumを変更 // // 5.1.0 // double関係の型を追加 // srev関数を追加 // マクロdebugを関数に変更 //
+			不要になった関数を削除 // // 5.1.1 // グローバル変数を追加 #pragma region AtCoder Template // #include <atcoder /scc>
+			// #ifdef _LOCAL__
+			// #include "./include/bits/stdc++.h"
+			// #else
+			#include <bits /stdc++.h>
+				// #endif
+				using namespace std;
+				// using namespace atcoder;
+
+				// 高速化
+				#pragma GCC target("avx")
+				#pragma GCC optimize("O3")
+				#pragma GCC optimize("unroll-loops")
+				#define fastio \
+				cin.tie(nullptr); \
+				cout.tie(nullptr); \
+				ios::sync_with_stdio(false); \
+				cout << fixed << setprecision(15); \ srand((unsigned)time(NULL)); // 更新履歴 // // 5.0.0 // 更新履歴をすべて削除 //
+					更新履歴を日本語化 // 新カテゴリ「高速化」を追加 (提供:https://zenn.dev/antyuntyun) // 関数 printを追加 // すべての関数をinline化 //
+					ほとんどの引数を定数化 // ctoll関数及びaverl関数が5.1.0で廃止予定になりました // 型エイリアスllがlong longから__int128_tに変更になりました //
+					ullも上記のとおりです // ファイルの先頭が変わりました // // 5.0.1 // ullのバグにより元に戻しました。 // // 5.0.2 // タイトルのインシデントを減らしました。
+					// 構造体Weekを追加しました。 // // 5.0.3 // 定数PIをacos(-1)に変更しました。 // // 5.0.4 // llをlonglongに変更しました。 // //
+					5.0.5 // 互換性関数lcm及びgcdを追加 // // 5.0.6 // 5.0.5で追加された関数をすべて削除 // // 5.0.7 // repマクロを一部変更 // // 5.0.8
+					// 型エイリアスmii,mllを追加 // // 5.0.9 // 関数vcinを追加 // // 5.0.10 // 関数minisumを変更 // // 5.1.0 //
+					double関係の型を追加 // srev関数を追加 // マクロdebugを関数に変更 // 不要になった関数を削除 // // 5.1.1 // グローバル変数を追加 #pragma region
+					AtCoder Template // #include <atcoder /scc>
+					// #ifdef _LOCAL__
+					// #include "./include/bits/stdc++.h"
+					// #else
+					#include <bits /stdc++.h>
+						// #endif
+						using namespace std;
+						// using namespace atcoder;
+
+						// 高速化
+						#pragma GCC target("avx")
+						#pragma GCC optimize("O3")
+						#pragma GCC optimize("unroll-loops")
+						#define fastio \
+						cin.tie(nullptr); \
+						cout.tie(nullptr); \
+						ios::sync_with_stdio(false); \
+						cout << fixed << setprecision(15); \ srand((unsigned)time(NULL)); // 更新履歴 // // 5.0.0 //
+							更新履歴をすべて削除 // 更新履歴を日本語化 // 新カテゴリ「高速化」を追加 (提供:https://zenn.dev/antyuntyun) // 関数 printを追加 //
+							すべての関数をinline化 // ほとんどの引数を定数化 // ctoll関数及びaverl関数が5.1.0で廃止予定になりました // 型エイリアスllがlong
+							longから__int128_tに変更になりました // ullも上記のとおりです // ファイルの先頭が変わりました // // 5.0.1 // ullのバグにより元に戻しました。
+							// // 5.0.2 // タイトルのインシデントを減らしました。 // 構造体Weekを追加しました。 // // 5.0.3 // 定数PIをacos(-1)に変更しました。
+							// // 5.0.4 // llをlonglongに変更しました。 // // 5.0.5 // 互換性関数lcm及びgcdを追加 // // 5.0.6 //
+							5.0.5で追加された関数をすべて削除 // // 5.0.7 // repマクロを一部変更 // // 5.0.8 // 型エイリアスmii,mllを追加 // // 5.0.9
+							// 関数vcinを追加 // // 5.0.10 // 関数minisumを変更 // // 5.1.0 // double関係の型を追加 // srev関数を追加 //
+							マクロdebugを関数に変更 // 不要になった関数を削除 // // 5.1.1 // グローバル変数を追加 #pragma region AtCoder Template //
+							#include <atcoder /scc>
+							// #ifdef _LOCAL__
+							// #include "./include/bits/stdc++.h"
+							// #else
+							#include <bits /stdc++.h>
+								// #endif
+								using namespace std;
+								// using namespace atcoder;
+
+								// 高速化
+								#pragma GCC target("avx")
+								#pragma GCC optimize("O3")
+								#pragma GCC optimize("unroll-loops")
+								#define fastio \
+								cin.tie(nullptr); \
+								cout.tie(nullptr); \
+								ios::sync_with_stdio(false); \
+								cout << fixed << setprecision(15); \ srand((unsigned)time(NULL)); // 更新履歴 // // 5.0.0 //
+									更新履歴をすべて削除 // 更新履歴を日本語化 // 新カテゴリ「高速化」を追加 (提供:https://zenn.dev/antyuntyun) // 関数
+									printを追加 // すべての関数をinline化 // ほとんどの引数を定数化 // ctoll関数及びaverl関数が5.1.0で廃止予定になりました //
+									型エイリアスllがlong longから__int128_tに変更になりました // ullも上記のとおりです // ファイルの先頭が変わりました // //
+									5.0.1 // ullのバグにより元に戻しました。 // // 5.0.2 // タイトルのインシデントを減らしました。 // 構造体Weekを追加しました。 //
+									// 5.0.3 // 定数PIをacos(-1)に変更しました。 // // 5.0.4 // llをlonglongに変更しました。 // // 5.0.5 //
+									互換性関数lcm及びgcdを追加 // // 5.0.6 // 5.0.5で追加された関数をすべて削除 // // 5.0.7 // repマクロを一部変更 // //
+									5.0.8 // 型エイリアスmii,mllを追加 // // 5.0.9 // 関数vcinを追加 // // 5.0.10 // 関数minisumを変更 //
+									// 5.1.0 // double関係の型を追加 // srev関数を追加 // マクロdebugを関数に変更 // 不要になった関数を削除 // // 5.1.1
+									// グローバル変数を追加 #pragma region AtCoder Template // #include <atcoder /scc>
+									// #ifdef _LOCAL__
+									// #include "./include/bits/stdc++.h"
+									// #else
+									#include <bits /stdc++.h>
+										// #endif
+										using namespace std;
+										// using namespace atcoder;
+
+										// 高速化
+										#pragma GCC target("avx")
+										#pragma GCC optimize("O3")
+										#pragma GCC optimize("unroll-loops")
+										#define fastio \
+										cin.tie(nullptr); \
+										cout.tie(nullptr); \
+										ios::sync_with_stdio(false); \
+										cout << fixed << setprecision(15); \ srand((unsigned)time(NULL)); // 更新履歴 // //
+											5.0.0 // 更新履歴をすべて削除 // 更新履歴を日本語化 // 新カテゴリ「高速化」を追加
+											(提供:https://zenn.dev/antyuntyun) // 関数 printを追加 // すべての関数をinline化 //
+											ほとんどの引数を定数化 // ctoll関数及びaverl関数が5.1.0で廃止予定になりました // 型エイリアスllがlong
+											longから__int128_tに変更になりました // ullも上記のとおりです // ファイルの先頭が変わりました // // 5.0.1 //
+											ullのバグにより元に戻しました。 // // 5.0.2 // タイトルのインシデントを減らしました。 // 構造体Weekを追加しました。 //
+											// 5.0.3 // 定数PIをacos(-1)に変更しました。 // // 5.0.4 // llをlonglongに変更しました。 // //
+											5.0.5 // 互換性関数lcm及びgcdを追加 // // 5.0.6 // 5.0.5で追加された関数をすべて削除 // // 5.0.7 //
+											repマクロを一部変更 // // 5.0.8 // 型エイリアスmii,mllを追加 // // 5.0.9 // 関数vcinを追加 // //
+											5.0.10 // 関数minisumを変更 // // 5.1.0 // double関係の型を追加 // srev関数を追加 //
+											マクロdebugを関数に変更 // 不要になった関数を削除 // // 5.1.1 // グローバル変数を追加 #pragma region
+											AtCoder Template // #include <atcoder /scc>
+											// #ifdef _LOCAL__
+											// #include "./include/bits/stdc++.h"
+											// #else
+											#include <bits /stdc++.h>
+												// #endif
+												using namespace std;
+												// using namespace atcoder;
+
+												// 高速化
+												#pragma GCC target("avx")
+												#pragma GCC optimize("O3")
+												#pragma GCC optimize("unroll-loops")
+												#define fastio \
+												cin.tie(nullptr); \
+												cout.tie(nullptr); \
+												ios::sync_with_stdio(false); \
+												cout << fixed << setprecision(15); \ srand((unsigned)time(NULL));
