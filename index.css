@@ -25,7 +25,7 @@ h3.downline {
 	border-bottom: solid 3px white;
 }
 
-button.round {
+.round {
 	border-radius: 6px;
 	background-color: #0078D4;
 	color: white;
@@ -34,4 +34,5 @@ button.round {
 	box-shadow: none;
 	text-align: center;
 	font-weight: 700;
+	cursor: pointer;
 }
