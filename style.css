@@ -32,6 +32,20 @@ h3.downline {
 	border: none;
 }
 
+.roundgo {
+	border-radius: 6px;
+	background-color: #0078D4;
+	color: white;
+	min-height: 42px;
+	height: auto;
+	box-shadow: none;
+	text-align: center;
+	font-weight: 700;
+	cursor: no-drop;
+	font-family: "shfont";
+	border: none;
+}
+
 header {
 	display: flex;
 	width: 99%;
