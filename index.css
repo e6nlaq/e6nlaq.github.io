@@ -22,16 +22,11 @@ h3.downline {
 
 button.round {
 	border-radius: 6px;
-	text-align: center;
-	padding: 11px 40px;
-	line-height: 20px;
-	box-shadow: none;
-	background: #0078D4;
-	color: #FFFFFF;
-	white-space: normal;
-	font-weight: 700;
-	margin-top: 15px;
-	border: 0;
+	background-color: #0078D4;
+	color: white;
 	min-height: 42px;
 	height: auto;
+	box-shadow: none;
+	text-align: center;
+	font-weight: 700;
 }
