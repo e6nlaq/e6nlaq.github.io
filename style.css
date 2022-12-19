@@ -123,3 +123,16 @@ h1.count {
 .alit {
 	color: aqua;
 }
+
+.code {
+	border-radius: 6px;
+	background-color: #1f1f1f;
+	color: white;
+	min-height: 42px;
+	height: auto;
+	box-shadow: none;
+	text-align: center;
+	font-weight: 700;
+	font-family: "consolas";
+	border: none;
+}
