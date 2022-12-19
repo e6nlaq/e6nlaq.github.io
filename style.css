@@ -124,15 +124,16 @@ h1.count {
 	color: aqua;
 }
 
-.code {
-	border-radius: 6px;
-	background-color: #1f1f1f;
+code {
+	display: inline-block;
+	padding: 0.1em 0.25em;
+	/* 文字周りの余白 */
 	color: white;
-	min-height: 42px;
-	height: auto;
-	box-shadow: none;
-	text-align: center;
-	font-weight: 700;
-	font-family: "consolas";
-	border: none;
+	/* 文字色 */
+	background-color: #1f1f1f;
+	/* 背景色 */
+	border-radius: 3px;
+	/* 角丸 */
+	border: solid 1px #1f1f1f;
+	/* 枠線 */
 }
