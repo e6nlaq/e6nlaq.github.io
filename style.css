@@ -136,4 +136,6 @@ code {
 	/* 角丸 */
 	border: solid 1px #1f1f1f;
 	/* 枠線 */
+
+	font-family: "源ノ角ゴシック Code", "Consolas", monospace;
 }
