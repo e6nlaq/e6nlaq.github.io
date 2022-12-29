@@ -1,1 +1,5 @@
 ErrorDocument 404 ./404.html
+
+<FilesMatch "\.html$">
+    AddType application/x-httpd-php .html
+</FilesMatch>
