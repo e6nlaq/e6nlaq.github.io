@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AES共通鍵ツール</title>
+	<link rel="stylesheet" href="https://e6nlaq.github.io/style.css">
+	<link rel="icon" href="https://e6nlaq.github.io/image/icon.png">
+	<script src="https://e6nlaq.github.io/script/script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+</head>
+
+<body>
+	<header>
+		<img src="https://e6nlaq.github.io/image/null.png" height="35px" width="35px">
+		<img src="https://e6nlaq.github.io/image/icon.png" height="35px" width="35px">
+		<img src="https://e6nlaq.github.io/image/null.png" height="10px" width="10px">
+		<a class="title" href="https://e6nlaq.github.io">e6nlaq's Homepage</a>
+	</header>
+	<img src="https://e6nlaq.github.io/image/null.png" height="100px">
+	<a class="gotop" href="#"></a>
+
+	<script type="text/javascript">
+		function ango() {
+			let bun = document.getElementById("hb").value;
+			let ket = document.getElementById("key").value;
+
+			let ans = CryptoJS.AES.encrypt(bun, key);
+
+
+		}
+	</script>
+
+	<h1 class="downline">AES暗号ツール</h1>
+
+
+
+</body>
+
+</html>
