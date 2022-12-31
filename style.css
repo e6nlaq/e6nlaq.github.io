@@ -139,3 +139,7 @@ code {
 
 	font-family: "源ノ角ゴシック Code", "Consolas", monospace;
 }
+
+.day {
+	font-style: italic;
+}
