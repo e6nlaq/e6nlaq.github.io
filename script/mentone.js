@@ -1,6 +1,6 @@
 let countdown = setInterval(function () {
 	const now = new Date()  //今の日時
-	const target = new Date("2023", "0", "1", "15", "0", "0") //ターゲット日時を取得
+	const target = new Date("2023", "0", "1", "0", "5", "0") //ターゲット日時を取得
 	const remainTime = target - now  //差分を取る（ミリ秒で返ってくる
 
 	//指定の日時を過ぎていたら処理をしない
