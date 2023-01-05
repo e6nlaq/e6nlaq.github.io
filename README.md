@@ -1,6 +1,6 @@
 # e6nlaq.github.io
 
-My Websute.
+My Website.
 
 
 [Link](https://e6nlaq.github.io)
