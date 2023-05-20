@@ -5,17 +5,23 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>らくがき市場(WOW!)</title>
+	<title>らくがき市場(NEO)</title>
 	<link rel="stylesheet" href="raku.css">
 	<link rel="shortcut icon" href="./image/raku/icon.png" type="image/x-icon">
 	<script src="./raku.js"></script>
 </head>
 
-<body>
-	<div class="raku">
+<body class="light-body">
+
+	<div class="toggle_button">
+		<input id="toggle" class="toggle_input" type='checkbox' />
+		<label for="toggle" class="toggle_label"></label>
+	</div>
+
+	<div class="raku light-raku" id="raku_div">
 		<h1 style="font-size: 50px;">らくがき
 			<span class="txt-rotate" data-period="2000"
-				data-rotate='[ "市場(WOW!)へようこそ。", "をお楽しみください。", "は才能だ。", "は芸術だ。", "は娯楽だ。", "は無限大だ。", "は神秘的だ。", "は最高だ。" ]'></span>
+				data-rotate='[ "市場(NEO)へようこそ。", "をお楽しみください。", "は才能だ。", "は芸術だ。", "は娯楽だ。", "は無限大だ。", "は神秘的だ。", "は最高だ。" ]'></span>
 		</h1>
 		<p>「らくがき市場」は、らくがきの芸術性を改めて評価するサイトです。</p>
 		<p>まずは一つ、ご覧ください。</p>
@@ -34,7 +40,40 @@
 		<a href="./image/raku/owattawa.png">強風オールバック</a>
 		<a href="./image/raku/mikan.png">ガチでまじめに描いたミカン</a>
 		<a href="./image/raku/winok.png">勝てばよかろうなのだ</a>
+		<a href="./image/raku/sadako.png">貞子</a>
+		<a href="./image/raku/head.png">らくがき市場(仮)時代のロゴ</a>
+		<a href="./image/raku/blender.png">Blender</a>
+		<a href="./image/raku/ponde.png">ポンデライオン</a>
+		<a href="./image/raku/ame.png">小さいころ考えた謎の歌</a>
 	</div>
+
+	<script>
+
+
+		const ModeChange = document.getElementById("toggle");
+		let theme = () => {
+			const body = document.body;
+			const raku = document.getElementById("raku_div");
+			if (ModeChange.checked) {
+				body.classList.remove("light-body");
+				raku.classList.remove("light-raku");
+				body.classList.add("dark-body");
+				raku.classList.add("dark-raku");
+			} else {
+				body.classList.remove("dark-body");
+				raku.classList.remove("dark-raku");
+				body.classList.add("light-body");
+				raku.classList.add("light-raku");
+			}
+		}
+
+		if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+			ModeChange.checked = true;
+			theme();
+		}
+
+		ModeChange.addEventListener("change", theme);
+	</script>
 </body>
 
 </html>

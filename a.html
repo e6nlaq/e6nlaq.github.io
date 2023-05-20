@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ダークモードとライトモード</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+
+        @keyframes light {
+            0% {
+                background-color: black;
+                color: white;
+            }
+
+            50% {
+                background-color: gray;
+                color: gray;
+            }
+
+            100% {
+                background-color: white;
+                color: black;
+            }
+        }
+
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+
+        .light-mode {
+            background-color: white;
+            color: black;
+            animation: light 0.3s;
+        }
+    </style>
+</head>
+
+<body class="light-mode">
+    <h1>ダークモードとライトモード</h1>
+    <p>ダークモードを有効にするには、チェックボックスをオンにしてください。</p>
+    <input type="checkbox" id="modeChange">
+    <label for="modeChange">ダークモード</label>
+    <script>
+        const modeChange = document.getElementById("modeChange");
+        modeChange.addEventListener("change", () => {
+            const body = document.body;
+            if (modeChange.checked) {
+                body.classList.add("dark-mode");
+                body.classList.remove("light-mode");
+            } else {
+                body.classList.add("light-mode");
+                body.classList.remove("dark-mode");
+            }
+        });
+    </script>
+</body>
+
+</html>
